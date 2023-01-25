@@ -151,10 +151,13 @@ function mouseMoveHandler(e) {
 document.addEventListener("touchstart",touchMoveHandler,false);
 
 function touchMoveHandler(e){
-    let relativeX = e.clientX - canvas.offsetLeft;
 
-    if(relativeX > 0 && relativeX < canvas.width) {
-        paddleX = relativeX - paddleWidth/2;
+    if(e.target === canvas){
+        let relativeX = e.clientX - canvas.offsetLeft;
+    
+        if(relativeX > 0 && relativeX < canvas.width) {
+            paddleX = relativeX - paddleWidth/2;
+        }
     }
 }
 
