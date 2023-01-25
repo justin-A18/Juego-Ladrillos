@@ -148,17 +148,15 @@ function mouseMoveHandler(e) {
 
 //tactil
 
-document.addEventListener("touchstart",touchMoveHandler,false);
+document.addEventListener("touchstart",touchMoveHandler);
 
 function touchMoveHandler(e){
 
-    if(e.target === canvas){
         let relativeX = e.clientX - canvas.offsetLeft;
     
         if(relativeX > 0 && relativeX < canvas.width) {
             paddleX = relativeX - paddleWidth/2;
         }
-    }
 }
 
 //dibujo de la bola
