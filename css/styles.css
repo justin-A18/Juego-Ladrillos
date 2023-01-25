@@ -1,0 +1,29 @@
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.canvitas{
+    display: block;
+    margin: 17rem auto; 
+    background-color: #eee;
+}
+
+@media (max-width: 530px) { 
+    .canvitas{
+        width: 100%;
+    }
+ }
+
