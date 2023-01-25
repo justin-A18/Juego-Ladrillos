@@ -148,7 +148,7 @@ function mouseMoveHandler(e) {
 
 //tactil
 
-document.addEventListener("touchmove",touchMoveHandler,false);
+document.addEventListener("touchstart",touchMoveHandler,false);
 
 function touchMoveHandler(e){
     let relativeX = e.clientX - canvas.offsetLeft;
