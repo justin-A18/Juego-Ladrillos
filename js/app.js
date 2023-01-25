@@ -146,6 +146,18 @@ function mouseMoveHandler(e) {
     }
 }
 
+//tactil
+
+document.addEventListener("touchmove",touchMoveHandler,false);
+
+function touchMoveHandler(e){
+    let relativeX = e.clientX - canvas.offsetLeft;
+
+    if(relativeX > 0 && relativeX < canvas.width) {
+        paddleX = relativeX - paddleWidth/2;
+    }
+}
+
 //dibujo de la bola
 function drawBall() {
 
